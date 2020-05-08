@@ -1,0 +1,30 @@
+<%- include ('./partials/header') -%>
+<%- include ('./partials/navbar') -%>
+<!------ Include the above in your HEAD tag ---------->
+
+<div class="wrapper fadeInDown">
+  <div id="formContent">
+    <!-- Tabs Titles -->
+
+    <!-- Icon -->
+    <div class="fadeIn first">
+      <h1 class="display -4">Login</h1>
+    </div><hr>
+
+    <!-- Login Form -->
+    <form action="/" method="POST">
+      <input type="text"  class="fadeIn second" name="username" placeholder="Registration number">
+      <input type="password"  class="fadeIn third" name="password" placeholder="password">
+      <input type="submit" class="fadeIn fourth" value="Log In">
+    </form>
+
+    <!-- Remind Passowrd -->
+    <div id="formFooter">
+      <a class="underlineHover" style="margin-right: 30%;" href="forgot">Forgot password</a>
+      <a class="underlineHover" style="margin-left: 20%;"href="register">sign up</a>
+    </div>
+
+  </div>
+</div>
+<%- include ('./partials/footer') -%>
+

@@ -1,0 +1,29 @@
+<%- include ('./partials/header') -%>
+<%- include ('./partials/navbar') -%>
+
+<!------ Include the above in your HEAD tag ---------->
+
+<div class="wrapper fadeInDown">
+  <div id="formContent">
+    <!-- Tabs Titles -->
+
+    
+    <div class="fadeIn first">
+      <h1 class="display -4">Forget Password</h1>
+    </div><hr>
+
+    <!-- email Form -->
+    <form action="/forgot" method="POST">
+      <input type="email"  class="fadeIn second" name="email" placeholder="email">
+    </form>
+
+    <!-- Remind Passowrd -->
+    <div id="formFooter">
+      <a class="underlineHover" style="margin-right: 30%;" href="/">login</a>
+      <a class="underlineHover" style="margin-left: 20%;"href="register">sign up</a>
+    </div>
+
+  </div>
+</div>
+<%- include ('./partials/footer') -%>
+
