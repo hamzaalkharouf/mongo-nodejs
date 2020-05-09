@@ -1,8 +1,11 @@
 
 /* BASIC */
 
-html {
-    background-color: #56baed;
+.footer {
+    height:5%;
+    background-color: #92badd;
+    width: 100%;
+    position: relative;
   }
   
   body {
