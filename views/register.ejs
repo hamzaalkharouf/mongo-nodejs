@@ -1,34 +1,48 @@
 <%- include ('./partials/header') -%>
 <%- include ('./partials/navbar') -%>
-<!------ Include the above in your HEAD tag ---------->
+<div class="wrapper fadeInDown cont">
+    <div id="formContent">
+    <div class="row">
+        
+        <h1 style="text-align: center">sign up</h1>
+        <div style="width: 30%; margin: 25px auto;">
+            <hr>
+            <form  action="/register" method="post" >
+                <div class="form-group">       
+                    <input type="text" class="form-control" name="username"  required="required" placeholder="Registration number">
+                </div>  
+               
+                <div class="form-group">
+                    <input type="text" name="email" id="email" class="form-control" placeholder="Email">
+                </div>
+                <div class="form-group">
+                    <input type="password" name="password" id="password" class="form-control" placeholder="Password">
+                </div>
 
-<div class="wrapper fadeInDown">
-  <div id="formContent">
-    <!-- Tabs Titles -->
+                <div class="form-group">
+                    <input type="password" name="confirm_password" id="confirm_password" class="form-control" placeholder="Confirm Password">
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" name="idnumber"  required="required" placeholder="Id Number">
+                </div>
+                <div class="form-group">       
+                        <input type="text" class="form-control" name="securityquestion"  required="required" placeholder="Security Question">
+                </div>   
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-lg btn-primary btn-block">submit</button>
+                    </div>
+            </form>
 
-    <!-- Icon -->
-    <div class="fadeIn first">
-      <h1 class="display -4">sign up</h1>
-    </div><hr>
+			
+		
+		</div>
+            <div id="formFooter">
+                <a class="underlineHover" href="/">login</a>
+              </div>
+    
+</div>
 
-    <!-- register Form -->
-    <form action="/register" method="POST">
-      <input type="text"  class="fadeIn second" name="username" placeholder="Registration number">
-      <input type="password"  class="fadeIn third" name="password" placeholder="password">
-      <input type="text"  class="fadeIn third" name="confirm_password" placeholder="confirm password">
-      <input type="email"  class="fadeIn third" name="email" placeholder="email">
-      <input type="text"  class="fadeIn third" name="idnumber" placeholder="Id Number">
-      <input type="text"  class="fadeIn third" name="securityquestion" placeholder="Security Question">
 
-      <input type="submit" class="fadeIn fourth" value="Log In">
-    </form>
-
-    <!-- Remind Passowrd -->
-    <div id="formFooter">
-      <a class="underlineHover" href="/">login</a>
-    </div>
-
-  </div>
+</div>
 </div>
 <%- include ('./partials/footer') -%>
-

@@ -1,30 +1,33 @@
+
 <%- include ('./partials/header') -%>
 <%- include ('./partials/navbar') -%>
-<!------ Include the above in your HEAD tag ---------->
-
-<div class="wrapper fadeInDown">
-  <div id="formContent" style="margin-bottom: 10%;">
-    <!-- Tabs Titles -->
-
-    <!-- Icon -->
-    <div class="fadeIn first">
-      <h1 class="display -4">Login</h1>
-    </div><hr>
-
-    <!-- Login Form -->
-    <form action="/" method="POST">
-      <input type="text"  class="fadeIn second" name="username" placeholder="Registration number">
-      <input type="password"  class="fadeIn third" name="password" placeholder="password">
-      <input type="submit" class="fadeIn fourth" value="Log In">
-    </form>
-
-    <!-- Remind Passowrd -->
-    <div id="formFooter">
-      <a class="underlineHover" style="margin-right: 30%;" href="forgot">Forgot password</a>
-      <a class="underlineHover" style="margin-left: 20%;"href="register">sign up</a>
+    
+<div class="wrapper fadeInDown cont">
+    <div id="formContent">
+    <div class="row">
+        <h1 style="text-align: center">login</h1>
+        
+        <div style="width: 30%; margin: 25px auto;"><hr>
+            <form action="/" method="post">
+                <div class="form-group">
+                    <input class="form-control" type="text" name="username" placeholder="Registration number" > 
+                </div>
+                <div class="form-group">
+                    <input class="form-control" type="password" name="password" placeholder="password">
+                </div>
+                <div class="form-group">
+                    <button class="btn btn-lg btn-primary btn-block">login</button>
+                </div>
+            </form>
+            
+        </div>
+        <div id="formFooter">
+          <label style="margin-right: 30%">  <a class="underlineHover" href="forgot" >forgot password</a></label>
+            <label style="margin-left: 30%"><a class="underlineHover" href="register" >sign up</a></label>
+          </div>
     </div>
+</div>
 
-  </div>
 </div>
 <%- include ('./partials/footer') -%>
 

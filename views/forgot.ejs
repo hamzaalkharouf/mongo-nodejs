@@ -1,29 +1,35 @@
 <%- include ('./partials/header') -%>
 <%- include ('./partials/navbar') -%>
-
-<!------ Include the above in your HEAD tag ---------->
-
-<div class="wrapper fadeInDown">
-  <div id="formContent" style="margin-bottom: 25%;">
-    <!-- Tabs Titles -->
-
-    
-    <div class="fadeIn first">
-      <h1 class="display -4">Forget Password</h1>
-    </div><hr>
-
-    <!-- email Form -->
-    <form action="/forgot" method="POST">
-      <input type="email"  class="fadeIn second" name="email" placeholder="email">
-    </form>
-
-    <!-- Remind Passowrd -->
-    <div id="formFooter">
-      <a class="underlineHover" style="margin-right: 30%;" href="/">login</a>
-      <a class="underlineHover" style="margin-left: 20%;"href="register">sign up</a>
+<div class="wrapper fadeInDown cont">
+    <div id="formContent">
+    <div class="row">
+	
+		<h1 style="text-align: center">forgot password</h1>
+        <div style="width: 30%; margin: 25px auto;"><hr>
+			<form action="/forgot" method="POST">
+				
+				<div class="form-group">
+					<input type="email" name="email" autofocus class="form-control"placeholder="Email">
+				</div>
+				<div class="form-group">
+					<button class="btn btn-lg btn-primary btn-block">Send</button>
+				</div>
+			</form>
+		
+		</div>
+		
+		<div id="formFooter">
+		<% if(!user){ %>
+			
+				<a class="underlineHover" href="/" style="text-align: left;">login</a>
+			  
+			  <% } else { %>
+				<a class="underlineHover" href="/index" style="text-align: left;">back</a>
+			<% } %>
+		</div>
     </div>
+</div>
 
-  </div>
 </div>
 <%- include ('./partials/footer') -%>
 
